@@ -1,0 +1,312 @@
+body {
+    color: #00274C;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00274C;
+    padding: 10px 20px;
+}
+
+.left-side .welcome-text {
+    color: #FFC72C;
+    font-weight: bold;
+}
+
+.right-side .header-btn {
+    margin-left: 10px;
+    padding: 6px 12px;
+    background-color: #FFC72C;
+    color: #00274C;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.right-side .header-btn:hover {
+    background-color: #FFB100;
+}
+
+header {
+    background-color: #00274C;
+    color: #FFC72C;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.profile-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 40px 30px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.profile-card,
+.center-edit-box,
+.profile-sidebar {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.profile-header h2 {
+    background: #e6f0ff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #00274C;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.profile-sidebar h3 {
+    color: #00274C;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.profile-sidebar ul.wishlist-list,
+.wishlist-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.profile-sidebar ul.wishlist-list li,
+.wishlist-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    gap: 10px;
+}
+
+.wishlist-list li span em {
+    color: #aaa;
+    font-style: italic;
+}
+
+.wishlist-list li a,
+.profile-sidebar ul.wishlist-list li a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.wishlist-list li a:hover {
+    color: darkred;
+}
+
+.profile-sidebar .address {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.change-pic-form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.upload-btn,
+.submit-btn {
+    background-color: #00509E;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+.change-password-btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: #00509e;
+    text-decoration: none;
+    margin-left: 200px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.change-password-btn:hover {
+    text-decoration: underline;
+    color: #003f7f;
+}
+
+.profile-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.profile-icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #00509E;
+}
+
+.profile-icons button:hover {
+    color: #003366;
+}
+
+.profile-details p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.profile-details .online {
+    color: green;
+    font-weight: bold;
+}
+
+.nav-container {
+    position: absolute;
+    top: 110px;
+    left: 60%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px 25px;
+    display: flex;
+    gap: 15px;
+    z-index: 100;
+    width: fit-content;
+}
+
+.nav-container a {
+    background-color: #00509E;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.nav-container a.logout {
+    background-color: #dc3545;
+}
+
+.nav-container a:hover {
+    background-color: #003f7f;
+}
+
+.nav-container a.logout:hover {
+    background-color: #b02a37;
+}
+
+.center-edit-box {
+    padding: 30px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.edit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.edit-header h3 {
+    margin: 0;
+}
+
+.edit-header a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.edit-table-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.edit-table-row label {
+    font-weight: bold;
+    width: 40%;
+}
+
+.edit-table-row input,
+.edit-table-row select {
+    width: 55%;
+    padding: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile-page {
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 20px 30px;
+    }
+
+    .profile-card,
+    .center-edit-box,
+    .profile-sidebar {
+        max-width: 90%;
+    }
+}
+
+footer {
+    background-color: #00274C;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

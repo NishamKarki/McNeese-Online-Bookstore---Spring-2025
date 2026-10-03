@@ -1,0 +1,55 @@
+.order-details-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    color: #00274C; /* Dark blue for text */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    color: #00274C;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 30px;
+    color: #00274C;
+}
+
+p {
+    margin: 8px 0;
+    color: #00274C;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+thead th {
+    background-color: #00274C;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #00274C;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}

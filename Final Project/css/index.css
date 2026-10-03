@@ -1,0 +1,226 @@
+
+/* Header */
+header {
+    background-color: rgba(0, 39, 76, 0.9);
+    color: #FFC72C;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0 auto;
+    text-align: center;
+    flex: 1;
+}
+
+.auth-buttons {
+    margin-right: 20px;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFC72C;
+    color: #00274C;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-buttons button:hover {
+    background-color: #FFB100;
+}
+
+nav {
+    background-color: rgba(0, 80, 158, 0.9);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    position: relative;
+    top: -100px;
+    animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* Nav Links */
+nav a {
+    color: #FFC72C;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+.hero {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFC72C;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    color: black;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #00509E;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #004080;
+}
+
+/* Product Cards */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Updated product card */
+.product-card {
+    background-color: white;
+    width: 250px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    color: black;
+    min-height: 400px; /* Ensure all product cards are the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Updated Product Image */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Fix for uneven product titles */
+.product-card h3 {
+    min-height: 50px;  /* Ensures all product titles take the same space */
+    display: flex;
+    align-items: center; /* Vertically align title */
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: #00274C;
+}
+
+/* Description */
+.product-card p {
+    color: #555;
+    padding: 0 10px 10px;
+}
+
+/* View Details & Add to Cart Buttons */
+.product-card a,
+.product-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00509E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.product-card a {
+    background: none;
+    color: #00509E;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.product-card a:hover {
+    text-decoration: underline;
+}
+
+.product-card button:hover {
+    background-color: #004080;
+}
+
+/* Image Hover Effect */
+.product-card img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar input[type="text"] {
+        width: 90%;
+    }
+}

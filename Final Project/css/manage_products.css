@@ -1,0 +1,183 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #00274C;
+}
+
+.page-banner {
+    background: #00274C;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 0; /* REMOVE bottom margin if not needed */
+    margin-bottom: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    width: 100vw;           /* Full viewport width */
+    position: relative;     
+    left: 0;
+    top: 0;
+}
+
+
+.page-banner h1 {
+    color: #FFC72C;
+    margin: 0;
+    font-size: 3rem;  
+    font-weight: 700;
+}
+
+.container .page-banner {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #00509E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #003f7d;
+}
+
+table {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: #00509E;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #00509E;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FFC72C;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #00509E;
+    color: white;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #003f7d;
+}
+
+.add-product {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.1rem;
+}
+
+.add-product a {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.add-product a:hover {
+    background-color: #218838;
+}
+
+.product-controls {
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.add-btn {
+    background-color: #00509E;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #003f7f;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.pagination a {
+    background-color: #00509E;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #003f7f;
+}
