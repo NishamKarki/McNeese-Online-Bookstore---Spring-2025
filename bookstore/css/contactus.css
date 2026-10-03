@@ -1,0 +1,164 @@
+
+
+/* Nav Links */
+nav a {
+    color: #FFC72C;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* Header */
+header {
+    background-color: rgba(0, 39, 76, 0.9);
+    color: #FFC72C;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0 auto;
+    text-align: center;
+    flex: 1;
+}
+
+.auth-buttons {
+    margin-right: 20px;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFC72C;
+    color: #00274C;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-buttons button:hover {
+    background-color: #FFB100;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(0, 80, 158, 0.9);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #FFC72C;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFC72C;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    background: rgba(255, 255, 255, 0.85); /* Light overlay for readability */
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+.contact-container h2 {
+    text-align: center;
+    color: #00274C;
+    margin-bottom: 20px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    margin: 10px 0 5px;
+    color: #00509E;
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #00509E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-container button:hover {
+    background-color: #004080;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 39, 76, 0.9);
+    color: #FFC72C;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-wrapper {
+        width: 95%;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        font-size: 14px;
+    }
+}
